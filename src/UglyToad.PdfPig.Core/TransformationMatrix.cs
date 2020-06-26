@@ -12,17 +12,17 @@
         /// <summary>
         /// The default <see cref="TransformationMatrix"/>.
         /// </summary>
-        public static TransformationMatrix Identity = new TransformationMatrix(1,0,0,
-            0,1,0,
-            0,0,1);
-        
+        public static TransformationMatrix Identity = new TransformationMatrix(1, 0, 0,
+            0, 1, 0,
+            0, 0, 1);
+
         /// <summary>
         /// Create a new <see cref="TransformationMatrix"/> with the X and Y translation values set.
         /// </summary>
         public static TransformationMatrix GetTranslationMatrix(double x, double y) => new TransformationMatrix(1, 0, 0,
             0, 1, 0,
             x, y, 1);
-        
+
         /// <summary>
         /// Create a new <see cref="TransformationMatrix"/> with the X and Y scaling values set.
         /// </summary>
@@ -96,7 +96,7 @@
         /// The value at (2, 1) - translation in Y.
         /// </summary>
         public readonly double F;
-        
+
         /// <summary>
         /// Get the value at the specific row and column.
         /// </summary>
@@ -291,7 +291,7 @@
         /// <param name="values">Either all 9 values of the matrix, 6 values in the default PDF order or the 4 values of the top left square.</param>
         /// <returns></returns>
         public static TransformationMatrix FromArray(decimal[] values)
-            => FromArray(values.Select(x => (double) x).ToArray());
+            => FromArray(values.Select(x => (double)x).ToArray());
 
         /// <summary>
         /// Create a new <see cref="TransformationMatrix"/> from the values.
@@ -342,8 +342,8 @@
             var f = (E * matrix.B) + (F * matrix.D) + (row3 * matrix.F);
             var r3 = (E * matrix.row1) + (F * matrix.row2) + (row3 * matrix.row3);
 
-            return new TransformationMatrix(a, b, r1, 
-                c, d, r2, 
+            return new TransformationMatrix(a, b, r1,
+                c, d, r2,
                 e, f, r3);
         }
 

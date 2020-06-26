@@ -3,24 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig", "UglyToad.PdfPig\UglyToad.PdfPig.csproj", "{57D0610C-87D3-4E0B-B7C2-EC8B765A8288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig", "src\UglyToad.PdfPig\UglyToad.PdfPig.csproj", "{57D0610C-87D3-4E0B-B7C2-EC8B765A8288}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Tests", "UglyToad.PdfPig.Tests\UglyToad.PdfPig.Tests.csproj", "{5BA09F66-5706-4637-B083-E1DC4D53289B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Tests", "src\UglyToad.PdfPig.Tests\UglyToad.PdfPig.Tests.csproj", "{5BA09F66-5706-4637-B083-E1DC4D53289B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C55738D2-3165-4D03-9CE2-10A2E2EEC465}"
-	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Fonts", "UglyToad.PdfPig.Fonts\UglyToad.PdfPig.Fonts.csproj", "{BBC8F94C-6E94-43FF-AB2E-47FF3C2B999F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Fonts", "src\UglyToad.PdfPig.Fonts\UglyToad.PdfPig.Fonts.csproj", "{BBC8F94C-6E94-43FF-AB2E-47FF3C2B999F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Core", "UglyToad.PdfPig.Core\UglyToad.PdfPig.Core.csproj", "{A7E1DD9F-92B7-4061-9BA5-6E06C06175F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.Core", "src\UglyToad.PdfPig.Core\UglyToad.PdfPig.Core.csproj", "{A7E1DD9F-92B7-4061-9BA5-6E06C06175F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.DocumentLayoutAnalysis", "UglyToad.PdfPig.DocumentLayoutAnalysis\UglyToad.PdfPig.DocumentLayoutAnalysis.csproj", "{60126BCA-6C52-48A9-A0A6-51796C8B0BE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UglyToad.PdfPig.DocumentLayoutAnalysis", "src\UglyToad.PdfPig.DocumentLayoutAnalysis\UglyToad.PdfPig.DocumentLayoutAnalysis.csproj", "{60126BCA-6C52-48A9-A0A6-51796C8B0BE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Tokens", "UglyToad.PdfPig.Tokens\UglyToad.PdfPig.Tokens.csproj", "{D840FF69-4250-4B05-9829-5ABEC43EC82C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Tokens", "src\UglyToad.PdfPig.Tokens\UglyToad.PdfPig.Tokens.csproj", "{D840FF69-4250-4B05-9829-5ABEC43EC82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Tokenization", "UglyToad.PdfPig.Tokenization\UglyToad.PdfPig.Tokenization.csproj", "{FD005C50-CD2C-497E-8F7E-6D791091E9B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Tokenization", "src\UglyToad.PdfPig.Tokenization\UglyToad.PdfPig.Tokenization.csproj", "{FD005C50-CD2C-497E-8F7E-6D791091E9B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,7 +10,7 @@
     internal static class CrossReferenceObjectOffsetValidator
     {
         private const long MinimumSearchOffset = 6;
-        
+
         /// <summary>
         /// Check that the offsets in the cross reference are correct.
         /// </summary>
@@ -23,7 +23,7 @@
             {
                 return true;
             }
-            
+
             var bruteForceOffsets = BruteForceSearcher.GetObjectLocations(bytes);
             if (bruteForceOffsets.Count > 0)
             {
@@ -85,7 +85,7 @@
 
             return false;
         }
-        
+
         private static bool ValidateXrefOffsets(IInputBytes bytes, IReadOnlyDictionary<IndirectReference, long> objectOffsets, ILog log)
         {
             if (objectOffsets == null)
@@ -145,7 +145,7 @@
                     return true;
                 }
             }
-            catch (Exception)
+            catch
             {
                 // Swallow the exception, obviously there isn't any valid object number
             }

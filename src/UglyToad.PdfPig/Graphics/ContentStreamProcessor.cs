@@ -573,7 +573,7 @@
 
             ClosePath();
         }
-        
+
         public void EndPath()
         {
             if (CurrentPath == null)

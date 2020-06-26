@@ -121,7 +121,7 @@
 
                 if (letter.StartBaseLine.Y < blY)
                 {
-                    blY = letter.StartBaseLine.Y;
+                    blY = letter.GlyphRectangle.BottomLeft.Y;
                 }
 
                 var right = letter.StartBaseLine.X + Math.Max(letter.Width, letter.GlyphRectangle.Width);

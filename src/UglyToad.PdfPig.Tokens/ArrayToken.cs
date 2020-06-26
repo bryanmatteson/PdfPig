@@ -83,7 +83,7 @@
 
             return builder.ToString();
         }
-        
+
         /// <inheritdoc />
         public bool Equals(IToken obj)
         {

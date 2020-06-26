@@ -1,132 +1,144 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <IsTestProject>true</IsTestProject>
-    <IsPackable>false</IsPackable>
-    <DebugType>full</DebugType>
-    <LangVersion>latest</LangVersion>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\pdfpig.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <IsTestProject>true</IsTestProject>
+        <IsPackable>false</IsPackable>
+        <DebugType>full</DebugType>
+        <LangVersion>latest</LangVersion>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>..\pdfpig.snk</AssemblyOriginatorKeyFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Fonts\TrueType\*.ttf" />
-    <None Remove="Fonts\Type1\*.pfa" />
-     <None Remove="Fonts\Type1\*.pfb" />
-    <None Remove="Integration\Documents\*" />
-    <None Remove="Integration\SpecificTestDocuments\*" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Remove="Fonts\TrueType\*.ttf" />
+        <None Remove="Fonts\Type1\*.pfa" />
+        <None Remove="Fonts\Type1\*.pfb" />
+        <None Remove="Integration\Documents\*" />
+        <None Remove="Integration\SpecificTestDocuments\*" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Fonts\TrueType\*.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fonts\Type1\*.pfa">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fonts\Type1\*.pfb">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <Content Include="Integration\Documents\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Integration\SpecificTestDocuments\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="Fonts\TrueType\*.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Fonts\Type1\*.pfa">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Fonts\Type1\*.pfb">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <Content Include="Integration\Documents\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Integration\SpecificTestDocuments\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Remove="Fonts\TrueType\Andada-Regular.ttf" />
-    <EmbeddedResource Remove="Fonts\TrueType\google-simple-doc.ttf" />
-    <EmbeddedResource Remove="Fonts\TrueType\PMingLiU.ttf" />
-    <EmbeddedResource Remove="Fonts\TrueType\Roboto-Regular.ttf" />
-    <EmbeddedResource Remove="Fonts\Type1\AdobeUtopia.pfa" />
-    <EmbeddedResource Remove="Fonts\Type1\CMBX10.pfa" />
-    <EmbeddedResource Remove="Fonts\Type1\CMBX12.pfa" />
-    <EmbeddedResource Remove="Fonts\Type1\CMCSC10.pfa" />
-    <EmbeddedResource Remove="Fonts\Type1\Raleway-Black.pfb" />
-  </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Remove="Fonts\TrueType\Andada-Regular.ttf" />
+        <EmbeddedResource Remove="Fonts\TrueType\google-simple-doc.ttf" />
+        <EmbeddedResource Remove="Fonts\TrueType\PMingLiU.ttf" />
+        <EmbeddedResource Remove="Fonts\TrueType\Roboto-Regular.ttf" />
+        <EmbeddedResource Remove="Fonts\Type1\AdobeUtopia.pfa" />
+        <EmbeddedResource Remove="Fonts\Type1\CMBX10.pfa" />
+        <EmbeddedResource Remove="Fonts\Type1\CMBX12.pfa" />
+        <EmbeddedResource Remove="Fonts\Type1\CMCSC10.pfa" />
+        <EmbeddedResource Remove="Fonts\Type1\Raleway-Black.pfb" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Fonts\CompactFontFormat\MinionPro.bin" />
-    <None Remove="Fonts\TrueType\Roboto-Regular.GlyphData.txt" />
-    <None Remove="Parser\SimpleGoogleDocPageContent.txt" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Remove="Fonts\CompactFontFormat\MinionPro.bin" />
+        <None Remove="Fonts\TrueType\Roboto-Regular.GlyphData.txt" />
+        <None Remove="Parser\SimpleGoogleDocPageContent.txt" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="Fonts\CompactFontFormat\MinionPro.bin">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\TrueType\Andada-Regular.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\TrueType\google-simple-doc.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\TrueType\PMingLiU.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\TrueType\Roboto-Regular.GlyphData.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\TrueType\Roboto-Regular.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\Type1\AdobeUtopia.pfa" />
-    <Content Include="Fonts\Type1\CMBX10.pfa" />
-    <Content Include="Fonts\Type1\CMBX12.pfa" />
-    <Content Include="Fonts\Type1\CMCSC10.pfa" />
-    <Content Include="Fonts\Type1\Raleway-Black.pfb" />
-    <Content Include="Parser\SimpleGoogleDocPageContent.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+    <ItemGroup>
+        <Content Include="Fonts\CompactFontFormat\MinionPro.bin">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\TrueType\Andada-Regular.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\TrueType\google-simple-doc.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\TrueType\PMingLiU.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\TrueType\Roboto-Regular.GlyphData.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\TrueType\Roboto-Regular.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Fonts\Type1\AdobeUtopia.pfa" />
+        <Content Include="Fonts\Type1\CMBX10.pfa" />
+        <Content Include="Fonts\Type1\CMBX12.pfa" />
+        <Content Include="Fonts\Type1\CMCSC10.pfa" />
+        <Content Include="Fonts\Type1\Raleway-Black.pfb" />
+        <Content Include="Parser\SimpleGoogleDocPageContent.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Codecov" Version="1.9.0" />
-    <PackageReference Include="coverlet.msbuild" Version="2.7.0">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
-    <PackageReference Include="System.Drawing.Common" Version="4.5.0-preview2-26406-04" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.extensibility.execution" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Codecov" Version="1.9.0" />
+        <PackageReference Include="coverlet.msbuild" Version="2.7.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+        <PackageReference Include="runtime.osx.10.10-x64.CoreCompat.System.Drawing" Version="5.8.64" />
+        <PackageReference Include="System.Drawing.Common" Version="4.5.0-preview2-26406-04" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+        <PackageReference Include="xunit.core" Version="2.4.1" />
+        <PackageReference Include="xunit.MSBuild" Version="2.0.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="xunit.extensibility.execution" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.utility" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="xunit.runner.console" Version="2.4.1">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\UglyToad.PdfPig.Core\UglyToad.PdfPig.Core.csproj" />
-    <ProjectReference Include="..\UglyToad.PdfPig.DocumentLayoutAnalysis\UglyToad.PdfPig.DocumentLayoutAnalysis.csproj" />
-    <ProjectReference Include="..\UglyToad.PdfPig.Fonts\UglyToad.PdfPig.Fonts.csproj" />
-    <ProjectReference Include="..\UglyToad.PdfPig.Tokenization\UglyToad.PdfPig.Tokenization.csproj" />
-    <ProjectReference Include="..\UglyToad.PdfPig.Tokens\UglyToad.PdfPig.Tokens.csproj" />
-    <ProjectReference Include="..\UglyToad.PdfPig\UglyToad.PdfPig.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\UglyToad.PdfPig.Core\UglyToad.PdfPig.Core.csproj" />
+        <ProjectReference Include="..\UglyToad.PdfPig.DocumentLayoutAnalysis\UglyToad.PdfPig.DocumentLayoutAnalysis.csproj" />
+        <ProjectReference Include="..\UglyToad.PdfPig.Fonts\UglyToad.PdfPig.Fonts.csproj" />
+        <ProjectReference Include="..\UglyToad.PdfPig.Tokenization\UglyToad.PdfPig.Tokenization.csproj" />
+        <ProjectReference Include="..\UglyToad.PdfPig.Tokens\UglyToad.PdfPig.Tokens.csproj" />
+        <ProjectReference Include="..\UglyToad.PdfPig\UglyToad.PdfPig.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Dla\Documents\90 180 270 rotated.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Dla\Documents\complex rotated.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Dla\Documents\no horizontal distance.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Dla\Documents\no vertical distance.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Dla\Documents\no vertical horizontal distance.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Dla\Documents\Random 2 Columns Lists Hyph - Justified.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <None Update="Dla\Documents\90 180 270 rotated.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Dla\Documents\complex rotated.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Dla\Documents\no horizontal distance.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Dla\Documents\no vertical distance.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Dla\Documents\no vertical horizontal distance.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Dla\Documents\Random 2 Columns Lists Hyph - Justified.pdf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 
 </Project>
